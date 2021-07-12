@@ -1,0 +1,7 @@
+# Project exclude paths
+/mybatis_01/target/
+.idea
+SpringMVC_Study.iml
+*.iml
+log
+target

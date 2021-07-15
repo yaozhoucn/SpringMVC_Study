@@ -7,11 +7,8 @@
 
     <import resource="spring-dao.xml"/>
 
-    <bean id="userMapper" class="com.yaozhou.dao.UserMapperImpl">
+<!--    <bean id="userMapper" class="com.yaozhou.dao.UserMapperImpl">
         <property name="sqlSession" ref="sqlSessionTemplate"/>
-    </bean>
+    </bean>-->
 
-    <bean id="userMapper2" class="com.yaozhou.dao.UserMapperImpl2">
-        <property name="sqlSessionFactory" ref="sqlSessionFactory"/>
-    </bean>
 </beans>

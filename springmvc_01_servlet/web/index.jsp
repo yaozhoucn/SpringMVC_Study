@@ -8,9 +8,13 @@
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
 <html>
   <head>
-    <title>$Title$</title>
+    <title>hello</title>
   </head>
   <body>
-  $END$
+  hello world and springmvc
+  <form action="/hello" method="post">
+      <input type="text" name="method" >
+      <input type="submit">
+  </form>
   </body>
 </html>

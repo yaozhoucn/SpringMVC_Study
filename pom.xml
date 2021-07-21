@@ -12,6 +12,7 @@
         <module>springmvc_01_servlet</module>
         <module>springmvc_02_hellospringmvc</module>
         <module>springmvc_03_annotation</module>
+        <module>springmvc_04_controller</module>
     </modules>
 
 

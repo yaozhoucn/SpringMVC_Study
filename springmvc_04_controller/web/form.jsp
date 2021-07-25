@@ -4,7 +4,7 @@
     <title>Title</title>
 </head>
 <body>
-<form action="/c" method="get">
+<form action="/c" method="post">
     <input name="name" value="name" type="text">
     <input type="submit">
 </form>

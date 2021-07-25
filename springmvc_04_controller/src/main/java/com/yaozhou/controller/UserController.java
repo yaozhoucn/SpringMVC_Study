@@ -1,5 +1,6 @@
 package com.yaozhou.controller;
 
+import com.yaozhou.pojo.User;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.RequestMapping;
@@ -18,6 +19,16 @@ public class UserController {
 
         //2.将结果返回给前端
         model.addAttribute("msg","前端接收的参数为"+name);
+
+        //3.视图跳转
+        return "test";
+    }
+    @RequestMapping("/user2")
+    public String userTest2(User user){
+        //1.接受前端参数
+        System.out.println("前端接收的参数为："+user);
+
+        //2.将结果返回给前端
 
         //3.视图跳转
         return "test";

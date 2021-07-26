@@ -13,6 +13,7 @@
         <module>springmvc_02_hellospringmvc</module>
         <module>springmvc_03_annotation</module>
         <module>springmvc_04_controller</module>
+        <module>springmvc_05_json</module>
     </modules>
 
 
@@ -97,6 +98,12 @@
             <groupId>springframework</groupId>
             <artifactId>spring-jdbc</artifactId>
             <version>1.2.6</version>
+        </dependency>
+        <!--json-->
+        <dependency>
+            <groupId>com.fasterxml.jackson.core</groupId>
+            <artifactId>jackson-databind</artifactId>
+            <version>2.10.1</version>
         </dependency>
     </dependencies>
     <build>

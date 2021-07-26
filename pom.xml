@@ -14,6 +14,8 @@
         <module>springmvc_03_annotation</module>
         <module>springmvc_04_controller</module>
         <module>springmvc_05_json</module>
+        <module>spring_06_ajax</module>
+        <module>springmvc_06_ajax</module>
     </modules>
 
 

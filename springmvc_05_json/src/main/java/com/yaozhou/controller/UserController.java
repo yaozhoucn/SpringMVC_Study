@@ -1,6 +1,7 @@
 package com.yaozhou.controller;
 
 import com.alibaba.fastjson.JSON;
+import com.alibaba.fastjson.JSONObject;
 import com.fasterxml.jackson.core.JsonProcessingException;
 import com.fasterxml.jackson.databind.ObjectMapper;
 import com.yaozhou.pojo.User;
@@ -87,6 +88,18 @@ public class UserController {
         //jackson对象转换json
         //使用fastjson
         String jsonString = JSON.toJSONString(users);
+        System.out.println("===================java对象转json字符串=====================");
+        String userList = JSON.toJSONString(users);
+
+        System.out.println("===================json字符串转java对象=====================");
+        User user = JSON.parseObject(userList, User.class);
+
+        System.out.println("===================java对象转json对象=====================");
+        JSONObject toJSON = (JSONObject) JSON.toJSON(users);
+
+        System.out.println("===================json对象转java对象=====================");
+        User javaObject = JSON.toJavaObject(toJSON, User.class);
+
         return jsonString;
     }
 }

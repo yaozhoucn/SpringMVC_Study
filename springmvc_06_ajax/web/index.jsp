@@ -1,16 +1,25 @@
-<%--
-  Created by IntelliJ IDEA.
-  User: HANG
-  Date: 2021/7/27
-  Time: 0:17
-  To change this template use File | Settings | File Templates.
---%>
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
 <html>
   <head>
-    <title>$Title$</title>
+    <title>Ajax</title>
+    <script src="${pageContext.request.contextPath}/statics/js/jquery-3.5.1.min.js"></script>
+<%--    <script src="https://code.jquery.com/jquery-3.1.1.min.js"></script>--%>
+    <script>
+    function a() {
+
+      $.post({
+        url:"${pageContext.request.contextPath}/a1",
+        data:{'name':$("#username").val()},
+        success:function (data,status) {
+          alert(data);
+          alert(status);
+        }
+      });
+
+    }
+    </script>
   </head>
   <body>
-  $END$
+    用户名：<input id="username" type="text" onblur="a()">
   </body>
 </html>

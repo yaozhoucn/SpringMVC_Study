@@ -1,7 +1,6 @@
 package com.yaozhou.controller;
 
 import org.springframework.stereotype.Controller;
-import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.ResponseBody;
@@ -29,5 +28,35 @@ public class AjaxController {
             response.getWriter().print("false");
         }
 
+    }
+    @ResponseBody
+    @RequestMapping("/a2")
+    public String loginTest(String name, String password, HttpServletResponse response){
+        String msg = "";
+        if (name != null){
+            if ("admin".equals(name)) {
+                        msg = "ok";
+                } else {
+                    msg = "用户名有误";
+                }
+
+            }
+        if (password !=null){
+            if ("123456".equals(password)) {
+                msg = "ok";
+            } else {
+                msg = "密码有误";
+            }
+        }
+        System.out.println("msg="+msg);
+        return msg;
+        }
+
+
+
+    @RequestMapping("/login")
+    public String login(){
+
+        return "login";
     }
 }

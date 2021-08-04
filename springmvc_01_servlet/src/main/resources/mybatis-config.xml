@@ -12,7 +12,7 @@
     <!--<properties resource="db.properties" />-->
     <!--别名-->
     <typeAliases>
-        <typeAlias type="com.com.yaozhou.pojo.User" alias="User"/>
+        <typeAlias type="com.yaozhou.pojo.User" alias="User"/>
     </typeAliases>
 
 <!--    <environments default="development">

@@ -15,6 +15,7 @@
         <module>springmvc_04_controller</module>
         <module>springmvc_05_json</module>
         <module>springmvc_06_ajax</module>
+        <module>springmvc_07_interceptor</module>
     </modules>
 
 

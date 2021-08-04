@@ -5,6 +5,7 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.ResponseBody;
 
+import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 import javax.servlet.http.HttpSession;
 import java.io.IOException;
@@ -75,5 +76,10 @@ public class AjaxController {
     public String main(HttpSession session,String username,String password){
         System.out.println("=============main============");
         return "main";
+    }
+    @RequestMapping("/loginout")
+    public String loginout(HttpServletRequest request){
+        request.getSession().removeAttribute("username");
+        return "redirect:/main";
     }
 }

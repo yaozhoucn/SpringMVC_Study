@@ -12,5 +12,6 @@
 </head>
 <body>
     <h1>登陆成功</h1>
+    <a href="${pageContext.request.contextPath}/loginout">注销</a>
 </body>
 </html>
